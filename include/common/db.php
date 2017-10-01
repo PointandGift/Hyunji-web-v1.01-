@@ -1,5 +1,6 @@
 <?php
-// What does these do...
+
+    // Database Information
     $servername = "localhost";
     $dblogin    = "root";
     $password   = "root";
