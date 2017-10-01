@@ -12,16 +12,8 @@
         
         // This is not supposed to be working this way!!!
         $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
-        $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
+        
+        echo "Working very well!";
         // set the PDO error mode to exception
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
