@@ -10,7 +10,9 @@
 
     try {
         
+        // This is not supposed to be working this way!!!
         $db = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
+        
         // set the PDO error mode to exception
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
