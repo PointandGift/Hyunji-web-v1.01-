@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Signin</title>
+        <meta charset="utf-8" />
+        
+        <style>
+        </style>
+    </head>
+    
     
     <?php
         
@@ -16,7 +24,6 @@
             include_once('include/navigation/default-header.php');    
         
         ?>
-        
         
         
         <div id="content">

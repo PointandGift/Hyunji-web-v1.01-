@@ -16,7 +16,7 @@
             include_once('include/navigation/default-header.php');
         
             $HYUNJI_ID = 2;
-            $sql = "SELECT card.company, card.img, card_holder.barcode, card_holder.point
+            $sql = "SELECT card.id, card.img
                       FROM card_holder
                       INNER JOIN card
                              ON card_holder.card_id = card.id
@@ -36,18 +36,16 @@
         
         <div id="content">
             <div class="container">
-                <ul id="card-list">
+                <div id="card-list">
                     <?php foreach( $rows as $row ){ ?>
-                        <li>
-                            <div class="card-container">
-                                <div class="card-img">
-                                    <img src="assets/images/companies/<?php echo $row['img']; ?>" style="width: 100%; border-radius: 25px;">
-                                </div>
-                                <div class="card-company-name">
-                                    <p><?php echo $row['company']; ?></p>
-                                </div>
+                        <div class="card-container">
+                            <div class="card-img">
+                                <a href="card-detail.php?card_id=<?php echo $row['id']; ?> ">
+                                <img src="assets/images/companies/<?php echo $row['img']; ?>" style="width: 100%; border-radius: 25px;">
+                                </a>
                             </div>
-                        </li>
+                        </div>
+                        
                     <?php } ?>
                 </ul>
             </div>
