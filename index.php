@@ -4,7 +4,7 @@
 
             
     // Include Header & Connect to DB
-    include_once('include/navigation/default-header.php');
+    include_once('include/navigation/main-header.php');
         
     $HYUNJI_ID = 2;
     $sql = "SELECT card.id, card.img
