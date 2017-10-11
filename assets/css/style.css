@@ -1,5 +1,14 @@
 @media screen and (min-width: 750px){
-/*      ALL     */
+    
+    
+    /*============================
+     *
+     *
+     *          Tags 
+     *
+     *
+     *============================*/
+    
     *{
         box-sizing: border-box;
     }
@@ -9,11 +18,45 @@
     p{
         font-size: 14px;
     }
+    
+    
+    /*============================
+     *
+     *
+     *          Class 
+     *
+     *
+     *============================*/
+    
+    /* Typography */
+    .bold{ font-weight: bold; }
+    .uppercase{ text-transform: uppercase; }
+    .text-center{ text-align: center; }
+    
+    
+    /* Font Colors */
+    .grey{ color: #CCCCCC; }
+    .black{ color: #000000; }
+    .white{ color: #FFFFFF; }
+    .pink{ color: pink; }
+    
+    
+    /* Background Colors */
+    .bg-grey{ background: #CCCCCC; }
+    .bg-black{ background: #000000; }
+    .bg-white{ background: #FFFFFF; }
+    .bg-pink{ background: pink; }
+    
+    
+    
+    
+    
+    <div class="font-font bold">YAHOOO</div>
 
     
     
-/*      HEADER     */
-/*    Container that contains all the head information within 90% width on each sides   */
+    /*      HEADER     */
+    /*    Container that contains all the head information within 90% width on each sides   */
     .container{
         width: 90%;
         margin: 0 auto;
