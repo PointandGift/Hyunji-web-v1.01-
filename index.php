@@ -6,21 +6,8 @@
     // Include Header & Connect to DB
     include_once('include/navigation/main-header.php');
         
-    $HYUNJI_ID = 2;
-    $sql = "SELECT card.id, card.img
-              FROM card_holder
-              INNER JOIN card
-                     ON card_holder.card_id = card.id
-              WHERE user_id = $HYUNJI_ID";
+    $rows = get_my_cards( $db, 2 );
 
-    $statement = $db->prepare($sql);
-
-    // Run!
-    $statement->execute();
-
-    // Get all the rows.
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC);       
-        
 ?>
     <div id="content">
         <div class="container">

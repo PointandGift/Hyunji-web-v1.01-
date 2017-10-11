@@ -8,20 +8,8 @@
 
     $password = md5($password);
 
-    //
-    // Check if already registered
-    //
-
-    $sql = "SELECT * FROM user
-            WHERE username LIKE '$username'
-              AND password LIKE '$password'";
-
-    $statement = $db->prepare($sql);
-    $statement->execute();
-    $count = $statement->rowCount();
-
     // if a record is found.
-    if( $count > 0) {
+    if( sign_in( $db, $username, $pasword ) ) {
         echo '<a href="http://localhost:8888/png">Welcome!!!!</a>';
     }
     // if not

@@ -6,22 +6,7 @@
 
     $card_id = isset( $_GET['card_id'] ) ? $_GET['card_id'] : false;
 
-    $HYUNJI_ID = 2;
-    $sql = "SELECT card.img, card_holder.barcode
-              FROM card_holder
-              INNER JOIN card
-                     ON card_holder.card_id = card.id
-              WHERE user_id = $HYUNJI_ID
-                AND card.id = $card_id";
-
-    $statement = $db->prepare($sql);
-
-    // Run!
-    $statement->execute();
-
-    // Get all the rows.
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC); 
-    $row = $rows[0];
+    $row = get_card_info( $db, 2, $card_id );
 
 ?>        
 <div id="card-detail-content">

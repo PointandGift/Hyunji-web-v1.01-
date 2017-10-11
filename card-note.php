@@ -7,21 +7,7 @@
 
     $card_id = isset( $_GET['card_id'] ) ? $_GET['card_id'] : false;
 
-    $HYUNJI_ID = 2;
-    $sql = "SELECT card_holder.note
-              FROM card_holder
-              WHERE card_id = $card_id
-              AND user_id = $HYUNJI_ID";
-
-    $statement = $db->prepare($sql);
-
-    // Run!
-    $statement->execute();
-
-    // Get all the rows.
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC); 
-    $row = $rows[0];
-
+    $row = get_card_info( $db, 2, $card_id );
 ?>
 
 

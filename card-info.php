@@ -5,22 +5,7 @@
 
     $card_id = isset( $_GET['card_id'] ) ? $_GET['card_id'] : false;
 
-    $HYUNJI_ID = 2;
-    $sql = "SELECT barcode, note
-              FROM card_holder
-              WHERE user_id = $HYUNJI_ID
-                AND card_id = $card_id";
-
-    $statement = $db->prepare($sql);
-
-    // Run!
-    $statement->execute();
-
-    // Get all the rows.
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC); 
-    $row = $rows[0];
-
-
+    $row = get_card_info( $db, 2, $card_id )
 
 ?>
 

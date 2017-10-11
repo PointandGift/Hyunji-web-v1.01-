@@ -3,20 +3,9 @@
     include_once('include/common/head.php');
     include_once('include/navigation/main-header.php');
 
-    $HYUNJI_ID = 2;
-    $sql = "SELECT * FROM card";
-
-    $statement = $db->prepare($sql);
-
-    // Run!
-    $statement->execute();
-
-    // Get all the rows.
-    $rows = $statement->fetchAll(PDO::FETCH_ASSOC);       
+    $rows = get_all_cards( $db );
 
 ?>
-
-
 
 <div id="content">
     <div class="container">

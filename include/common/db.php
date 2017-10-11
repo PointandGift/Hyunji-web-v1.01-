@@ -1,5 +1,7 @@
 <?php
 
+    include_once('db-functions.php');
+
     // Database Information
     $servername = "localhost";
     $dblogin    = "root";
