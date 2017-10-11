@@ -6,7 +6,6 @@
             form {
                 width: 100%;
                 height: 1250px;
-                position: absolute;
                 left: 0px;
                 bottom: 0px;
                 z-index: -1;
@@ -52,6 +51,7 @@
                 padding: 30px 320px;
                 border-radius: 20px;
                 background-color: white;
+                bottom: 0px;
             }
         </style>
     </head>

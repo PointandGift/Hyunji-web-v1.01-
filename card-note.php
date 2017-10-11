@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <title>Note_Page</title>
+        <meta charset="utf-8" />
+        
+        <style>
+            body{
+                background-color: #CCCCCC;
+            }
+            #note_container{
+                width: 80%;
+                height: 1000px;
+                font-size: 30px;
+                background-color: white;
+                margin: 10% 0 0 10%;
+                border-radius: 15px;
+                padding: 30px;
+            }
+            
+            
+        </style>
+    </head>
     <?php
         // Include Head
         include_once('include/common/head.php');
@@ -33,13 +53,13 @@
         
         
         <div id="content">
-            <div class="container">
+            <div id="note_container">
                 <?php echo $row['note']; ?>
                 <hr>
                 <a href="card-info.php?card_id=<?php echo $card_id; ?>">Edit</a>
             </div>
         </div>
         
-        <?php //include_once('include/common/footer.php'); ?>
+        <?php include_once('include/common/footer.php'); ?>
     </body>
 </html>

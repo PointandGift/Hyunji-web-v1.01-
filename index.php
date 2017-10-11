@@ -51,6 +51,6 @@
             </div>
         </div>
         
-        <?php //include_once('include/common/footer.php'); ?>
+        <?php include_once('include/common/footer.php'); ?>
     </body>
 </html>

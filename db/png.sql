@@ -40,10 +40,10 @@ INSERT INTO `card` (`id`, `company`, `img`) VALUES
 (1, 'best buy', 'best_buy.png'),
 (2, 'starbucks', 'starbucks.png'),
 (3, 'canadian_tire', 'canadian_tire.png'),
-(4, 'sephora', 'sephora.png'),
-(5, 'shoppers_drug_mart', 'shoppers_drug_mart.png'),
-(6, 'the_home_depot', 'the_home_depot.png'),
-(7, 'walmart', 'walmart.png');
+(4, 'sephora', 'sephora.svg'),
+(5, 'shoppers_drug_mart', 'shoppers_drug_mart.jpg'),
+(6, 'the_home_depot', 'the_home_depot.jpeg'),
+(7, 'walmart', 'walmart.jpeg');
 
 -- --------------------------------------------------------
 

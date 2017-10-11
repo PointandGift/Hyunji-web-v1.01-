@@ -33,7 +33,7 @@
                     <?php foreach( $rows as $row ){ ?>
                         <li>
                             
-                            <img src="assets/images/companies/<?php echo $row['img']; ?>" style="width: 20%; border-radius: 25px;">
+                            <img src="assets/images/companies/<?php echo $row['img']; ?>">
                             <?php echo $row['company']; ?>
     
                             <form method="POST" action="add-card.php">

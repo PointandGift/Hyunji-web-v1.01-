@@ -31,7 +31,9 @@
             $count = $statement->rowCount();
         
         ?>
-        <a href="http://localhost:8888/png/card-detail.php?card_id=<?php echo $card_id; ?>">Successfully done. Check it out!</a>
+        <div id="success">
+            <a href="http://localhost:8888/png/card-detail.php?card_id=<?php echo $card_id; ?>">Successfully done. Check it out!</a>
+        </div>
         
         
     </body>

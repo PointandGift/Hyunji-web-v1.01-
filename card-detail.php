@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+     <head>
+        <title>Note_Page</title>
+        <meta charset="utf-8" />
+        
+        <style>
+            body{
+                background-color: #CCCCCC;
+            }
+        </style>
+    </head>
     
     <?php
         // Include Head
@@ -34,7 +44,7 @@
         
         
         
-        <div id="content">
+        <div id="card-detail-content">
             <div class="container">
                 <div class="card-detail-container">
                     <div id="card-img">
@@ -56,6 +66,6 @@
             </div>
         </div>
         
-        <?php //include_once('include/common/footer.php'); ?>
+        <?php include_once('include/common/footer.php'); ?>
     </body>
 </html>
