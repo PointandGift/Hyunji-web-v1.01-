@@ -1,12 +1,3 @@
-<?php
-
-    // Connect to DB
-    // The include_once statement includes and evaluates the specified file during the execution of the script. 
-    // **Source: http://php.net/manual/en/function.include-once.php**
-    include_once('include/common/db.php');
-
-?>
-
 <div id="default-header">
     <div class="container">
         <div id="top-bar">
