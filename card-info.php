@@ -11,7 +11,7 @@
 
 
 
-<div id="card-info-content">
+<div id="content">
     <div class="container">
         <form method="post" action="update-card.php">
             <input name="card_id" type="hidden" value="<?php echo $card_id ?>"><br>

@@ -9,7 +9,7 @@
     $row = get_card_info( $db, 2, $card_id );
 
 ?>        
-<div id="card-detail-content">
+<div id="content">
     <div class="container">
         <div class="card-detail-container">
             <div id="card-img">

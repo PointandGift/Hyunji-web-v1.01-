@@ -1,5 +1,41 @@
 @media screen and (min-width: 750px){
     
+    /**
+     *
+     *      1. TAGS
+     *      2. CLASS
+     *              -Typography
+     *              -Color
+     *              -BG Color
+     *              -Text Alignment
+     *              -Structure(Container/Margin/Padding...)
+     * 
+     *      3. Components
+     *              - Button
+     *              - Table
+     *              - Search Bar
+     *              - Tab
+     *              - Form
+     *      4. Header / Footer
+     *
+     *      5. Navigation
+     *
+     *      6. Page
+     *              - Sign In / Sign Up
+     *              - Index
+     *              - List Page
+     *              - Single Page (Detail, Edit, Update)
+     *              - Contact Page
+     *              - Appendix...
+     *
+     *
+     **/
+    
+    
+    
+    
+    
+    
     
     /*============================
      *
@@ -40,6 +76,10 @@
     .white{ color: #FFFFFF; }
     .pink{ color: pink; }
     
+    .margin-top-negative-10{
+        margin-top: -10px;
+    }
+    
     
     /* Background Colors */
     .bg-grey{ background: #CCCCCC; }
@@ -48,20 +88,57 @@
     .bg-pink{ background: pink; }
     
     
+    .pink-gradation{
+        background: #ff294a; /* Old browsers */
+        background: -moz-linear-gradient(top, #ff6d6a 0%, #ff294a 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ff6d6a 0%,#ff294a 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ff6d6a 0%,#ff294a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6d6a', endColorstr='#ff294a',GradientType=0 ); /* IE6-9 */
+    }
     
-    
-    
-    /*      HEADER     */
-    /*    Container that contains all the head information within 90% width on each sides   */
-    .container{
+    /* Structure */
+     .container{
         width: 90%;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    
+    .mini-container{
+        width: 50%;
         margin: 0 auto;
         padding: 30px 0;
     }
 
     
+    
+    /*============================
+     *
+     *
+     *          Component 
+     *
+     *
+     *============================*/
+    
+    /* Message */
+    #success{
+        width: 100%;
+        margin: 30% 0 0 0;
+    }
+    #success a{
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    
+    
 
-/*      HEADER - BACKGROUND GRADIENT     */
+    /*============================
+     *
+     *
+     *           Navigation 
+     *
+     *
+     *============================*/
     #default-header{
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6d6a+0,ff294a+100 */
         background: #ff6d6a; /* Old browsers */
@@ -72,8 +149,6 @@
     }
    
     
-
-/*      HEADER id="top-bar      */
     #default-header .container #top-bar{
         display: table;
         width: 100%;
@@ -85,8 +160,6 @@
     }
  
     
-    
-/*      Content     */
     #default-header .container #top-bar #search-bar #search-form{
         margin-top: 40px;
         width: 100%;
@@ -101,6 +174,7 @@
         padding: 5px 10px;
         opacity: 0.5;
     }
+    
     #default-header .container #top-bar #dropdown-menu{
         display: table-cell;
         width: 20%;
@@ -111,10 +185,7 @@
         width: 100px;
         height: 100px;
     }
-
     
-    
-/*      HEADER id="tab-bar      */
     #default-header .container #tab-bar ul{
         display: table;
         width: 100%;
@@ -136,8 +207,89 @@
     }
     
     
+    /*
+    
+        FOOTER Navigation
+    
+    */ 
+    nav ul{
+        position: absolute;
+        bottom: 5px;
+        display: table;
+        width: 100%;
+        border-top: 2px solid #CCCCCC;
+        background-color: white;
+    }
+    nav ul li{
+        display: table-cell;
+        width: 25%;
+        text-align: center;
+        padding: 25px 0;
+    }
+    nav ul li img{
+        width: 150px;
+    }
+    nav ul li a{
+        font-size: 22pt;
+        text-decoration: none;
+        color: #8c8c8c;
+    }
+    nav ul li a:hover{
+        background-image: url("assets/images/icons/menu_cards_red.svg");
+    }
+    
+    
+    
+    
+    
+    /*============================
+     *
+     *
+     *    Sign In / Sign Up Pages
+     *
+     *
+     *============================*/
+    
+    #sign-up-form-container,
+    #sign-in-form-container{
+        min-height: 1000px;
+    }
+    
+    #sign-up-form-container form input,
+    #sign-in-form-container form input{
+        display: block;
+        background: rgba(0,0,0,0);
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 2px solid white;
+        border-left: 0;
+        padding: 20px;
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    #sign-up-form-container form button,
+    #sign-in-form-container form button{
+        background: white;
+        width: 300px;
+        font-size: 30px;
+        margin: 30px 0 0 0;
+        padding: 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;   
+        appearance: none;
+        border: 0;
+        border-radius: 20px;
+        color: red;
+    }
+    
+    
 
-/*      INDEX.PHP       */ 
+    /*
+    
+        CARD LIST PAGE
+    
+    */ 
     #content .container #card-list li{
         margin-bottom: 5px;
     }
@@ -160,7 +312,11 @@
 
     
     
-/*      CARD DETAIL PAGE       */ 
+    /*
+    
+        CARD DETAIL PAGE
+    
+    */ 
     #card-detail-content{
         width: 80%;
         background-color: white;
@@ -203,7 +359,11 @@
     
     
     
-/*      CARD INFO PAGE       */ 
+    /* 
+    
+        CARD INFO PAGE
+    
+    */ 
     #card-info-content .container form input{
         width: 90%;
         margin: 5% 0 0 5%;
@@ -221,46 +381,12 @@
         margin: 5% 0 0 5%;
         font-size: 30px;
     }
-    
-    
-    
-    #success{
-        width: 100%;
-        margin: 30% 0 0 0;
-    }
-    #success a{
-        font-size: 30px;
-        text-decoration: none;
-    }
-    
-    
-/*      FOOTER.PHP      */ 
-    nav ul{
-        position: absolute;
-        bottom: 5px;
-        display: table;
-        width: 100%;
-        border-top: 2px solid #CCCCCC;
-        background-color: white;
-    }
-    nav ul li{
-        display: table-cell;
-        width: 25%;
-        text-align: center;
-        padding: 25px 0;
-    }
-    nav ul li img{
-        width: 150px;
-    }
-    nav ul li a{
-        font-size: 22pt;
-        text-decoration: none;
-        color: #8c8c8c;
-    }
-    nav ul li a:hover{
-        background-image: url("assets/images/icons/menu_cards_red.svg");
-    }
 }
+
+
+
+
+
 
 @media screen and (min-height: 1334px){
     nav ul{
