@@ -13,7 +13,7 @@
         <div class="container">
             <div id="card-list">
                 <?php foreach( $rows as $row ){ ?>
-                    <div class="card-container">
+                    <div class="card-container <?php echo $row['company']; ?>">
                         <div class="card-img">
                             <a href="card-detail.php?card_id=<?php echo $row['id']; ?> ">
                             <img src="assets/images/companies/<?php echo $row['img']; ?>" style="width: 100%; border-radius: 25px;">

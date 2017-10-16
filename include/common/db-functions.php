@@ -24,7 +24,7 @@
             return false;
         }
         
-        $sql = "SELECT card.id, card.img
+        $sql = "SELECT card.id, card.company, card.img
               FROM card_holder
               INNER JOIN card
                      ON card_holder.card_id = card.id

@@ -108,6 +108,15 @@
         margin: 0 auto;
         padding: 30px 0;
     }
+    
+    /* Company Background */
+    
+    .bestbuy{
+        background: blue;
+    }
+    .starbucks{
+        background: green;
+    }
 
     
     
@@ -297,7 +306,6 @@
         width: 48%;
         height: 250px;
         float: left;
-        background-color: red;
         border-radius: 15px;
         margin: 1%;
         overflow: hidden;
