@@ -33,35 +33,31 @@ export default class App extends React.Component {
                     placeholder = "         Password"
                     placeholderTextColor = "#FFFFFF"
                 />
-                
-                <TextInput style={styles.input}
-                    placeholder = "         Email"
-                    placeholderTextColor = "#FFFFFF"
-                />
                         
                 <Image style={styles.password} source={require('./images/password.png')}
                 />     
                                                         
                 <TouchableOpacity style={styles.buttonContainer}>
                     <Text style={styles.buttonText}>
-                        Sign Up
+                        Login
                     </Text>
                 </TouchableOpacity>
                     
                 <Image style={styles.username} source={require('./images/username.png')}
                 />
+                                                       
+                <Text style={styles.createAccount}>
+                    Don't have an account? <Text style={styles.signup}>Sign up</Text>
+                </Text>
                 
                 <Text style={styles.textOr}> 
-                    ─────  Or register with  ─────
+                    ────────  OR  ────────
                 </Text>
                 
                 <Image style={styles.facebook} source={require('./images/facebook.png')}
                 />
                                                        
                 <Image style={styles.google} source={require('./images/google.png')}
-                />
-                                                     
-                <Image style={styles.email} source={require('./images/email.png')}
                 />
             </View>
         </View>
@@ -98,16 +94,13 @@ const styles = StyleSheet.create({
         borderLeftColor: 'transparent'
     },
     username: {
-        marginTop: -250
+        marginTop: -200
     },
     password: {
-        marginTop: -110
-    },
-    email: {
-        marginTop: -240
+        marginTop: -50
     },
     buttonContainer: {
-        marginTop: 110,
+        marginTop: 60,
         paddingVertical: 20,
         backgroundColor: '#FFFFFF',
         borderRadius: 18
@@ -118,12 +111,19 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold'
     },
+    createAccount: {
+        marginTop: 320,
+        textAlign: 'center',
+        color: '#FFFFFF',
+        fontSize: 16,
+        backgroundColor: 'transparent'
+    },
     signup: {
         fontWeight: 'bold'
     },
     textOr: {
         width: 301,
-        marginTop: 260,
+        marginTop: -130,
         textAlign: 'center',
         color: '#FFFFFF',
         fontSize: 16,
